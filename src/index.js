@@ -20,6 +20,9 @@ module.exports = function solveEquation(equation) {
    arr.push(Math.round(x1));
    arr.push(Math.round(x2));
 
-   return arr.sort();
+   return arr.sort(comparator());
 }
 
+function comparator() {
+    (left, right) => left - right;
+}
