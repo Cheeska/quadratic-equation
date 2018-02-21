@@ -17,9 +17,9 @@ module.exports = function solveEquation(equation) {
        var x1 = (-b + Math.sqrt(D)) / 2*a;
    }
 
-   arr.push(x1);
-   arr.push(x2);
+   arr.push(Math.round(x1));
+   arr.push(Math.round(x2));
 
-   return arr;
+   return arr.sort();
 }
 
